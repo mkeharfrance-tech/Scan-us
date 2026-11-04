@@ -1,0 +1,37 @@
+name: scan-us
+
+on:
+  schedule:
+    - cron: "30 22 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Telecharger le scanner d'origine (version relue)
+        run: |
+          mkdir -p scanner
+          curl -fsSL https://raw.githubusercontent.com/Jakeschincariol/day-trader-skill/3d0f4ef6986f4984b7c6bd46f7ff4f87744c3abd/trader-scanner/scan.py -o scanner/scan.py
+      - name: Scanner
+        run: |
+          python3 scanner/scan.py universe
+          python3 scanner/scan.py daily --min-price 5 --min-volume 1000000 --show 100 | tee scan.log
+      - name: Publier
+        run: |
+          mkdir -p data
+          cp trader/watchlist.json data/watchlist.json
+          cp scan.log data/scan.log
+          git config user.name "scan-bot"
+          git config user.email "scan-bot@users.noreply.github.com"
+          git add data
+          git commit -m "scan $(date -u +%F)" || echo "rien de nouveau"
+          git push
