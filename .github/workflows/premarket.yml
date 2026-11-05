@@ -1,0 +1,109 @@
+name: premarket-us
+on:
+  push:
+    paths:
+      - ".github/workflows/premarket.yml"
+  schedule:
+    - cron: "20 13 * * 1-5"
+    - cron: "45 9 * * 4"
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  premarket:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Cours de pre-marche
+        env:
+          SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          cat > premarket.py <<'PYEOF'
+          import json, os, time, datetime, urllib.request, urllib.parse
+
+          def chart(sym, interval="1m"):
+              u = ("https://query1.finance.yahoo.com/v8/finance/chart/" + urllib.parse.quote(sym)
+                   + "?range=1d&interval=" + interval + "&includePrePost=true")
+              req = urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0"})
+              d = json.load(urllib.request.urlopen(req, timeout=20))
+              return d["chart"]["result"][0]
+
+          def quote(sym, prev_override=None, interval="1m"):
+              r = chart(sym, interval)
+              meta = r["meta"]
+              ts = r.get("timestamp") or []
+              q = r["indicators"]["quote"][0]
+              ctp = meta.get("currentTradingPeriod", {})
+              ps = ctp.get("pre", {}).get("start")
+              pe = ctp.get("regular", {}).get("start")
+              prev = prev_override or meta.get("chartPreviousClose") or meta.get("previousClose")
+              bars = [(t, c, v) for t, c, v in zip(ts, q["close"], q["volume"])
+                      if c is not None and ps is not None and pe is not None and ps <= t < pe]
+              if not bars:
+                  return {"pre_price": None, "prev_close": prev, "n_bars": 0}
+              t, c, _ = bars[-1]
+              vol = sum((v or 0) for _, _, v in bars)
+              out = {"pre_price": round(c, 2), "pre_time_utc": datetime.datetime.fromtimestamp(t, datetime.timezone.utc).strftime("%Y-%m-%d %H:%M"),
+                     "pre_volume": int(vol), "prev_close": round(prev, 2) if prev else None, "n_bars": len(bars)}
+              if prev:
+                  out["gap_pct"] = round((c / prev - 1) * 100, 2)
+              return out
+
+          def main():
+              # attente jusqu'a 13:57 UTC (14h57 Paris en hiver) pour le declenchement planifie de 13h20 UTC
+              if os.environ.get("SCHEDULE") == "20 13 * * 1-5":
+                  now = datetime.datetime.now(datetime.timezone.utc)
+                  target = now.replace(hour=13, minute=57, second=0, microsecond=0)
+                  if now < target:
+                      time.sleep((target - now).total_seconds())
+              os.makedirs("data", exist_ok=True)
+              wl = json.load(open("data/watchlist.json"))
+              try:
+                  lv = json.load(open("data/levels.json")).get("levels", {})
+              except Exception:
+                  lv = {}
+              quotes, errors = {}, 0
+              for h in wl.get("hits", [])[:120]:
+                  s = h["symbol"]
+                  try:
+                      prev = lv.get(s, {}).get("close")
+                      quotes[s] = quote(s.replace(".", "-"), prev)
+                  except Exception as e:
+                      errors += 1
+                      print("echec", s, e)
+                  time.sleep(0.15)
+              fut = {}
+              for name, sym in (("SP500_futures", "ES=F"), ("Nasdaq100_futures", "NQ=F")):
+                  try:
+                      r = chart(sym, "5m")
+                      m = r["meta"]; q = r["indicators"]["quote"][0]
+                      closes = [c for c in q["close"] if c is not None]
+                      prev = m.get("chartPreviousClose") or m.get("previousClose")
+                      if closes and prev:
+                          fut[name] = {"last": round(closes[-1], 2), "prev_close": round(prev, 2),
+                                       "change_pct": round((closes[-1] / prev - 1) * 100, 2)}
+                  except Exception as e:
+                      print("echec futures", sym, e)
+              now = datetime.datetime.now(datetime.timezone.utc)
+              have = sum(1 for v in quotes.values() if v.get("pre_price") is not None)
+              json.dump({"generated_utc": now.strftime("%Y-%m-%d %H:%M"), "scan_as_of": wl.get("as_of"),
+                         "with_premarket": have, "total": len(quotes), "errors": errors,
+                         "futures": fut, "quotes": quotes}, open("data/premarket.json", "w"))
+              print("premarket", have, "/", len(quotes), "erreurs", errors, "futures", list(fut))
+
+          if __name__ == "__main__":
+              main()
+          PYEOF
+          python3 premarket.py
+      - name: Publier
+        run: |
+          git config user.name "scan-bot"
+          git config user.email "scan-bot@users.noreply.github.com"
+          git add data/premarket.json
+          git commit -m "premarket $(date -u +%F-%H%M)" || echo "rien de nouveau"
+          git pull --rebase
+          git push
