@@ -4,8 +4,7 @@ on:
     paths:
       - ".github/workflows/premarket.yml"
   schedule:
-    - cron: "20 13 * * 1-5"
-    - cron: "45 9 * * 4"
+    - cron: "30 12 * * 1-5"
   workflow_dispatch: {}
 permissions:
   contents: write
@@ -54,10 +53,10 @@ jobs:
               return out
 
           def main():
-              # attente jusqu'a 13:57 UTC (14h57 Paris en hiver) pour le declenchement planifie de 13h20 UTC
-              if os.environ.get("SCHEDULE") == "20 13 * * 1-5":
+              # attente jusqu a 13:10 UTC (14h10 Paris en hiver) pour le declenchement planifie de 12h30 UTC
+              if os.environ.get("SCHEDULE") == "30 12 * * 1-5":
                   now = datetime.datetime.now(datetime.timezone.utc)
-                  target = now.replace(hour=13, minute=57, second=0, microsecond=0)
+                  target = now.replace(hour=13, minute=10, second=0, microsecond=0)
                   if now < target:
                       time.sleep((target - now).total_seconds())
               os.makedirs("data", exist_ok=True)
