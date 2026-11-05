@@ -106,4 +106,4 @@ jobs:
           git add data/premarket.json
           git commit -m "premarket $(date -u +%F-%H%M)" || echo "rien de nouveau"
           git pull --rebase
-          git push
+          git push 
