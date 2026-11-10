@@ -1,109 +1,109 @@
-Daily scan, Mon 2026-11-09 18:14 ET, closes through 2026-11-09 (Yahoo spark, daily closes only).
-Fetched 5,933 of 5,933 charts. 1,628 passed the liquidity filter ($5+ and 1,000,000+ shares), 3 had under 30 days; 1,625 scanned.
-733 charts matched a setup: 376 20-day closing-high breakout, 72 bull flag, 200 reclaimed the 20-day average, 67 oversold (RSI under 30), 89 oversold bounce.
+Daily scan, Tue 2026-11-10 18:12 ET, closes through 2026-11-10 (Yahoo spark, daily closes only).
+Fetched 5,933 of 5,933 charts. 1,525 passed the liquidity filter ($5+ and 1,000,000+ shares), 2 had under 30 days; 1,523 scanned.
+331 charts matched a setup: 195 20-day closing-high breakout, 45 bull flag, 36 reclaimed the 20-day average, 61 oversold (RSI under 30), 14 oversold bounce.
 Most traded first (price x volume):
-  NVDA      $178.67  RSI  27.3  oversold (RSI under 30)
-  AAPL      $350.69  RSI  57.7  20-day closing-high breakout, reclaimed the 20-day average
-  MSFT      $545.18  RSI  57.1  reclaimed the 20-day average
-  AMZN      $266.93  RSI  58.9  20-day closing-high breakout
-  SNDK      $886.51  RSI  30.3  oversold bounce
-  GOOGL     $288.15  RSI  32.6  oversold bounce
-  INTC       $59.37  RSI  29.4  oversold (RSI under 30), oversold bounce
-  GOOG      $286.01  RSI  31.6  oversold bounce
-  LLY     $1,411.95  RSI  67.7  bull flag
-  MRVL      $154.60  RSI  32.2  oversold bounce
-  LITE      $596.16  RSI  35.3  oversold bounce
-  COHR      $225.19  RSI  46.9  reclaimed the 20-day average
-  MRNA      $269.00  RSI  67.3  20-day closing-high breakout
-  APP       $410.00  RSI  78.5  20-day closing-high breakout
-  STX       $506.14  RSI  32.1  oversold bounce
-  TXN       $295.73  RSI  52.7  reclaimed the 20-day average
-  WDC       $289.78  RSI  35.7  oversold bounce
-  JPM       $342.08  RSI  52.6  reclaimed the 20-day average
-  COST    $1,066.18  RSI  69.5  20-day closing-high breakout
-  DELL      $346.31  RSI  32.7  oversold bounce
-  MPWR    $1,388.05  RSI  58.8  20-day closing-high breakout, reclaimed the 20-day average
-  CAT       $598.88  RSI  32.6  oversold bounce
-  ANET      $186.17  RSI  51.5  reclaimed the 20-day average
-  CSCO       $98.65  RSI  38.2  oversold bounce
-  GS        $906.22  RSI  50.3  reclaimed the 20-day average
-  JNJ       $282.11  RSI  63.6  20-day closing-high breakout
-  CEG       $276.09  RSI  55.7  reclaimed the 20-day average
-  RKLB       $58.86  RSI  51.2  reclaimed the 20-day average
-  MS        $187.10  RSI  48.9  reclaimed the 20-day average
-  TMO       $721.63  RSI  61.5  20-day closing-high breakout
-  KO         $96.03  RSI  65.4  20-day closing-high breakout
-  PG        $168.32  RSI  67.4  20-day closing-high breakout
-  ALAB      $216.87  RSI  37.3  oversold bounce
-  APH        $80.71  RSI  51.1  reclaimed the 20-day average
-  MCHP       $61.49  RSI  32.8  oversold bounce
-  MCD       $281.44  RSI  76.0  20-day closing-high breakout
-  GE        $335.54  RSI  61.9  20-day closing-high breakout
-  NOW       $102.76  RSI  28.5  oversold (RSI under 30), oversold bounce
-  TER       $246.00  RSI  34.3  oversold bounce
-  TTD        $14.93  RSI  68.6  20-day closing-high breakout
-  TMUS      $168.71  RSI  59.7  20-day closing-high breakout
-  DE        $691.28  RSI  62.4  20-day closing-high breakout
-  ABNB      $190.29  RSI  66.2  20-day closing-high breakout
-  GLW       $115.95  RSI  39.2  oversold bounce
-  ACN       $254.37  RSI  61.1  bull flag
-  JHX        $29.94  RSI  65.2  20-day closing-high breakout
-  SPOT      $609.10  RSI  63.6  bull flag
-  AAL        $14.16  RSI  62.9  20-day closing-high breakout
-  CLS       $222.92  RSI  35.1  oversold bounce
-  AXON      $303.18  RSI  22.6  oversold (RSI under 30)
-  FERG      $259.93  RSI  70.0  20-day closing-high breakout
-  NEM       $125.16  RSI  62.5  20-day closing-high breakout
-  DIS       $119.12  RSI  70.5  20-day closing-high breakout
-  NTRA      $320.39  RSI  32.0  oversold bounce
-  CBRS       $96.70  RSI  34.1  oversold bounce
-  UAL       $120.38  RSI  64.7  20-day closing-high breakout
-  SNPS      $466.97  RSI  53.1  reclaimed the 20-day average
-  TGT       $165.90  RSI  61.9  20-day closing-high breakout
-  OMH        $25.84  RSI  78.3  20-day closing-high breakout
-  SCHW       $92.73  RSI  48.2  reclaimed the 20-day average
-  HWM       $216.24  RSI  51.6  reclaimed the 20-day average
-  RTX       $196.31  RSI  52.1  reclaimed the 20-day average
-  DDOG      $179.62  RSI  28.4  oversold (RSI under 30), oversold bounce
-  RBLX       $51.60  RSI  55.9  reclaimed the 20-day average
-  HON       $229.00  RSI  61.7  20-day closing-high breakout
-  RCL       $336.98  RSI  69.8  20-day closing-high breakout
-  GILD      $169.32  RSI  62.9  bull flag
-  UNP       $297.01  RSI  53.6  reclaimed the 20-day average
-  LOW       $232.10  RSI  72.5  20-day closing-high breakout
-  TEAM      $154.90  RSI  27.4  oversold (RSI under 30), oversold bounce
-  WULF       $12.38  RSI  48.7  reclaimed the 20-day average
-  LMT       $588.19  RSI  52.5  reclaimed the 20-day average
-  EW        $104.71  RSI  79.5  20-day closing-high breakout
-  AEP       $128.33  RSI  55.3  reclaimed the 20-day average
-  TEM        $84.44  RSI  61.9  20-day closing-high breakout
-  COR       $345.76  RSI  59.0  reclaimed the 20-day average
-  VRTX      $550.87  RSI  59.2  bull flag
-  DVN        $42.40  RSI  28.8  oversold (RSI under 30), oversold bounce
-  XYZ        $88.56  RSI  67.7  20-day closing-high breakout
-  HONA      $164.77  RSI  54.2  reclaimed the 20-day average
-  MSI       $527.97  RSI  80.8  20-day closing-high breakout
-  FTNT      $122.47  RSI  26.7  oversold (RSI under 30), oversold bounce
-  CMI       $466.47  RSI  33.1  oversold bounce
-  DAL        $91.80  RSI  66.4  20-day closing-high breakout
-  SPGI      $471.09  RSI  66.1  bull flag
-  IONS       $31.00  RSI  20.2  oversold (RSI under 30)
-  RDDT      $100.79  RSI  31.9  oversold bounce
-  CDNS      $336.53  RSI  54.2  reclaimed the 20-day average
-  QXO        $13.78  RSI  65.2  20-day closing-high breakout
-  KDP        $36.94  RSI  65.4  20-day closing-high breakout
-  NRG        $97.40  RSI  50.8  reclaimed the 20-day average
-  CMG        $35.74  RSI  67.9  20-day closing-high breakout
-  ROP       $471.64  RSI  68.7  bull flag
-  CSX        $50.48  RSI  52.6  reclaimed the 20-day average
-  FISV       $63.52  RSI  83.0  20-day closing-high breakout
-  OKLO       $26.84  RSI  46.6  reclaimed the 20-day average
-  PLD       $130.55  RSI  53.4  reclaimed the 20-day average
-  PSA       $338.15  RSI  73.1  bull flag
-  ALNY      $156.61  RSI  22.6  oversold (RSI under 30), oversold bounce
-  ROK       $389.36  RSI  35.9  oversold bounce
-  ... and 633 more in the watchlist (--show N for more).
-Wrote trader/watchlist.json (mode daily, 733 hits).
+  NVDA      $168.89  RSI  23.9  oversold (RSI under 30)
+  SNDK      $859.99  RSI  29.4  oversold (RSI under 30)
+  AMZN      $270.87  RSI  61.4  20-day closing-high breakout
+  AVGO      $331.98  RSI  49.1  reclaimed the 20-day average
+  INTC       $58.13  RSI  28.8  oversold (RSI under 30)
+  LLY     $1,432.29  RSI  69.8  20-day closing-high breakout
+  BRK.B     $583.34  RSI  77.8  20-day closing-high breakout
+  TTWO      $224.64  RSI  64.3  20-day closing-high breakout
+  NOW        $99.61  RSI  27.0  oversold (RSI under 30)
+  QCOM      $173.53  RSI  49.9  reclaimed the 20-day average
+  KO         $96.91  RSI  68.0  20-day closing-high breakout
+  PG        $168.66  RSI  67.9  20-day closing-high breakout
+  NET       $305.80  RSI  50.9  reclaimed the 20-day average
+  BAC        $50.68  RSI  42.8  reclaimed the 20-day average
+  GE        $337.91  RSI  62.8  20-day closing-high breakout
+  HIMS       $19.13  RSI  29.5  oversold (RSI under 30)
+  MCD       $282.17  RSI  76.3  20-day closing-high breakout
+  CLX       $106.60  RSI  80.1  20-day closing-high breakout
+  TTD        $15.42  RSI  71.1  20-day closing-high breakout
+  PEP       $143.61  RSI  65.8  20-day closing-high breakout
+  DIS       $119.21  RSI  70.6  20-day closing-high breakout
+  HUM       $438.06  RSI  61.0  20-day closing-high breakout
+  SPOT      $606.22  RSI  62.6  bull flag
+  VZ         $46.31  RSI  56.1  20-day closing-high breakout
+  ICE       $176.36  RSI  68.8  20-day closing-high breakout
+  AXON      $302.54  RSI  22.2  oversold (RSI under 30)
+  FTNT      $123.57  RSI  27.9  oversold (RSI under 30), oversold bounce
+  HLT       $379.76  RSI  72.3  20-day closing-high breakout
+  TMUS      $169.08  RSI  60.0  20-day closing-high breakout
+  TEAM      $148.60  RSI  25.6  oversold (RSI under 30)
+  UAL       $120.56  RSI  64.7  20-day closing-high breakout
+  KDP        $37.59  RSI  68.2  20-day closing-high breakout
+  DDOG      $178.40  RSI  28.2  oversold (RSI under 30)
+  CHTR      $134.06  RSI  65.8  20-day closing-high breakout
+  SMX        $19.25  RSI  69.0  20-day closing-high breakout
+  CME       $309.09  RSI  66.1  20-day closing-high breakout
+  SBUX      $109.95  RSI  67.6  20-day closing-high breakout
+  RCL       $339.85  RSI  70.7  20-day closing-high breakout
+  FISV       $63.32  RSI  81.9  bull flag
+  MAR       $428.26  RSI  74.8  20-day closing-high breakout
+  ECHO      $104.16  RSI  61.7  20-day closing-high breakout
+  BSX        $44.70  RSI  51.7  reclaimed the 20-day average
+  RIOT       $18.08  RSI  59.2  20-day closing-high breakout
+  CMG        $35.92  RSI  68.5  20-day closing-high breakout, bull flag
+  MARA        $7.34  RSI  45.1  reclaimed the 20-day average
+  DVN        $43.41  RSI  34.0  oversold bounce
+  PSA       $335.93  RSI  70.0  bull flag
+  CI        $303.13  RSI  57.2  reclaimed the 20-day average
+  CAH       $276.79  RSI  76.3  20-day closing-high breakout
+  CNC        $70.19  RSI  53.2  reclaimed the 20-day average
+  ROIV       $41.19  RSI  66.4  20-day closing-high breakout
+  PBR        $18.28  RSI  24.6  oversold (RSI under 30)
+  DAL        $92.20  RSI  66.8  20-day closing-high breakout
+  EL        $113.43  RSI  64.2  20-day closing-high breakout
+  ZETA       $35.07  RSI  60.9  20-day closing-high breakout, reclaimed the 20-day average
+  INSM      $119.49  RSI  65.1  20-day closing-high breakout
+  FWONK     $108.94  RSI  80.0  20-day closing-high breakout
+  AAON       $75.01  RSI  53.4  reclaimed the 20-day average
+  TGTX       $64.26  RSI  67.5  20-day closing-high breakout
+  ALNY      $151.64  RSI  21.2  oversold (RSI under 30)
+  GPN       $101.59  RSI  71.3  20-day closing-high breakout
+  NDAQ      $110.02  RSI  70.8  20-day closing-high breakout, bull flag
+  ARES      $139.41  RSI  68.5  bull flag
+  CART       $58.47  RSI  65.4  bull flag
+  ADM        $69.30  RSI  22.0  oversold (RSI under 30)
+  WAB       $303.49  RSI  61.8  20-day closing-high breakout
+  AIG        $82.32  RSI  58.3  reclaimed the 20-day average
+  SPG       $234.48  RSI  79.5  20-day closing-high breakout
+  HAS       $121.82  RSI  77.8  20-day closing-high breakout
+  PTC       $196.55  RSI  75.8  20-day closing-high breakout
+  MDLN       $40.91  RSI  72.6  20-day closing-high breakout
+  EXR       $158.95  RSI  75.2  bull flag
+  IONS       $28.19  RSI  17.7  oversold (RSI under 30)
+  TSCO       $37.50  RSI  68.1  20-day closing-high breakout
+  EMBJ       $82.50  RSI  66.2  20-day closing-high breakout
+  DT         $43.49  RSI  21.3  oversold (RSI under 30)
+  ORKA      $109.50  RSI  71.7  20-day closing-high breakout
+  FAST       $54.84  RSI  67.7  20-day closing-high breakout
+  TSN        $60.29  RSI  73.9  20-day closing-high breakout
+  CPRT       $32.30  RSI  66.0  bull flag
+  OMC        $88.84  RSI  68.9  20-day closing-high breakout
+  WCN       $191.14  RSI  71.0  bull flag
+  FIS        $28.31  RSI  29.3  oversold (RSI under 30)
+  BBIO       $78.67  RSI  68.0  20-day closing-high breakout
+  WYNN       $87.30  RSI  66.1  20-day closing-high breakout
+  CDW       $169.36  RSI  61.2  20-day closing-high breakout
+  GEHC       $83.65  RSI  72.6  bull flag
+  AER       $175.85  RSI  83.1  20-day closing-high breakout
+  PHM       $130.60  RSI  58.3  bull flag
+  RPRX       $69.45  RSI  78.0  20-day closing-high breakout
+  VTRS       $20.85  RSI  74.4  20-day closing-high breakout
+  HALO      $102.98  RSI  28.6  oversold (RSI under 30), oversold bounce
+  BAH        $87.42  RSI  65.8  bull flag
+  O          $59.54  RSI  65.5  20-day closing-high breakout
+  CNP        $41.24  RSI  55.6  reclaimed the 20-day average
+  SNY        $48.23  RSI  76.6  20-day closing-high breakout
+  IBN        $34.88  RSI  83.0  20-day closing-high breakout
+  DKS       $150.00  RSI  57.5  20-day closing-high breakout
+  MOS        $22.99  RSI  67.7  20-day closing-high breakout
+  PCTY      $179.00  RSI  69.9  20-day closing-high breakout
+  ... and 231 more in the watchlist (--show N for more).
+Wrote trader/watchlist.json (mode daily, 331 hits).
 A scan is a list of charts that match a rule, not a list of stocks to buy. Next: pick one chart, then /trader-news TICKER.
-VIX ok 2026-11-09 19.920000076293945
+VIX ok 2026-11-10 19.459999084472656
 niveaux 120
