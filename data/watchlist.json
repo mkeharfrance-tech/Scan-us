@@ -1,6 +1,6 @@
 {
   "created_by": "trader-scanner",
-  "created_at": "2026-11-25T23:23:08Z",
+  "created_at": "2026-11-26T23:27:04Z",
   "mode": "daily",
   "as_of": "2026-11-25 close",
   "universe": 5924,
@@ -18,9 +18,9 @@
       "setups": [
         "oversold"
       ],
-      "price": 73.61,
-      "close_date": "2026-11-25",
-      "rsi": 24.1,
+      "price": 94.39,
+      "close_date": "2026-11-19",
+      "rsi": 29.3,
       "volume": 121828915
     },
     {
@@ -782,9 +782,9 @@
       "setups": [
         "breakout_20d"
       ],
-      "price": 33.16,
+      "price": 33.17,
       "close_date": "2026-11-25",
-      "rsi": 66.5,
+      "rsi": 66.6,
       "volume": 10895587
     },
     {
@@ -3753,7 +3753,7 @@
       ],
       "price": 5.33,
       "close_date": "2026-11-25",
-      "rsi": 36.8,
+      "rsi": 36.9,
       "volume": 1556854
     },
     {
